@@ -1,10 +1,9 @@
 # Consecionaria
-## 2 parcial
 
-Este Proyecto es la continuación de la  **Parte 1**  *del parcial de programacion* en este proyecto se le agrego las siguientes cosas.
-
+Este Proyecto es un manejador de una concesionaria en donde nos permite administrar tanto los vehículos como los empleados que tenemos
 ### Lista de elementos agregados
 
+- clases
 - Interfaces
 - Manejo de excepciones
 - Unit Testing
@@ -13,12 +12,6 @@ Este Proyecto es la continuación de la  **Parte 1**  *del parcial de programaci
 - **Delegados**
 - **Task**
 - **Eventos**
-
-# Mejoras Implementadas en la Aplicación de la Concesionaria
-  
-## Descripción General
-
-Los nuevos elementos se han agregado para poner en práctica los conocimientos aprendidos en clase, aplicando las mejores prácticas para mejorar tanto la estructura del código como el funcionamiento de la aplicación de la concesionaria.
 
 ## Uso de Base de Datos
 
