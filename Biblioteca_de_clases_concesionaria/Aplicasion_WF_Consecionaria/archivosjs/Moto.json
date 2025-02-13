@@ -1,0 +1,22 @@
+[
+  {
+    "cilindrada": 250,
+    "peso": 90,
+    "matricula": "YZA567",
+    "modelo": "Yamaha YZF-R6",
+    "ano": 2018,
+    "kilometraje": 10000,
+    "motor": "599cc",
+    "precio": 12000
+  },
+  {
+    "cilindrada": 300,
+    "peso": 300,
+    "matricula": "BCD890",
+    "modelo": "Kawasaki Ninja ZX-10R",
+    "ano": 2021,
+    "kilometraje": 5000,
+    "motor": "998cc",
+    "precio": 18000
+  }
+]

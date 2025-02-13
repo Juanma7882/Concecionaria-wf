@@ -1,0 +1,22 @@
+[
+  {
+    "puertas": 2,
+    "cantidadDePasajeros": 0,
+    "matricula": "MNO345",
+    "modelo": "Porsche 911",
+    "ano": 2022,
+    "kilometraje": 5000,
+    "motor": "3.0L Twin-Turbo",
+    "precio": 120000
+  },
+  {
+    "puertas": 2,
+    "cantidadDePasajeros": 0,
+    "matricula": "PQR678",
+    "modelo": "Ferrari F8",
+    "ano": 2021,
+    "kilometraje": 8000,
+    "motor": "3.9L Twin-Turbo V8",
+    "precio": 280000
+  }
+]

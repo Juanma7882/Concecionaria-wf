@@ -1,0 +1,30 @@
+[
+  {
+    "Nombre": "Juan",
+    "Apellido": "Fernandez",
+    "Dni": 44486053,
+    "Usuario": "Usuario",
+    "Contrasena": "Contrase\u00F1a"
+  },
+  {
+    "Nombre": "Juan",
+    "Apellido": "Fer",
+    "Dni": 44865521,
+    "Usuario": "Administrador",
+    "Contrasena": "Contrase\u00F1a"
+  },
+  {
+    "Nombre": "Guido",
+    "Apellido": "Clas",
+    "Dni": 85472164,
+    "Usuario": "Guido",
+    "Contrasena": "Contrase\u00F1a"
+  },
+  {
+    "Nombre": "Felipe",
+    "Apellido": "Bustos gil",
+    "Dni": 12345678,
+    "Usuario": "Felipe",
+    "Contrasena": "Contrase\u00F1a"
+  }
+]

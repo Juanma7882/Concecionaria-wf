@@ -1,0 +1,148 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Aplicasion_WF_Consecionaria;
+using Biblioteca_de_clases_concesionaria;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
+
+
+namespace Aplicasion_WF_Consecionaria
+{
+    public partial class frmLogin : Form
+    {
+        private readonly string projectDirectory;
+        private readonly string absolutePath;
+
+
+
+        public frmLogin()
+        {
+            InitializeComponent();
+            projectDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string relativePath = Path.Combine(projectDirectory, @"..\..\archivosjs\");
+            absolutePath = Path.GetFullPath(relativePath);
+
+            txtUsuario.Text = "usuario";
+            textContrasena.Text = "Contraseña";
+
+            this.FormClosing += new FormClosingEventHandler(this.FrmLogin_FormClosing);
+        }
+
+        private void FrmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmCerrar secondaryForm = new FrmCerrar();
+            DialogResult result = secondaryForm.ShowDialog();
+            if (result != DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void btnCerrarPrograma_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private string Capitalize(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+            return char.ToUpper(input[0]) + input.Substring(1).ToLower();
+        }
+
+
+
+        private void IdentificarPersona List<Persona>(string txtuser,string txtpass)
+        {
+            bool userFound = false;
+
+
+            foreach (var admi in admileidos)
+            {
+                if (string.IsNullOrWhiteSpace(txtuser) || string.IsNullOrWhiteSpace(txtpass))
+                {
+                    MessageBox.Show("Por favor, ingrese usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (txtuser == admi.Usuario && txtpass == admi.Contrasena)
+                {
+                    userFound = true;
+
+                    frmMenu menu = new frmMenu(admi.Dni, absolutePath);
+                    menu.Show();
+                    this.Hide();
+                }
+            }
+            if (!userFound)
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
+
+
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+
+            string txtuser = Capitalize(txtUsuario.Text);
+            string txtpass = Capitalize(textContrasena.Text);
+
+            if (string.IsNullOrWhiteSpace(txtuser) || string.IsNullOrWhiteSpace(txtpass))
+            {
+                MessageBox.Show("Por favor, ingrese usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Personas_central personas_Central = new Personas_central();
+            List<Administrador> admileidos = personas_Central.LeerAdministrador();
+            bool userFound = false;
+
+
+            foreach (var admi in admileidos)
+            {
+                if (string.IsNullOrWhiteSpace(txtuser) || string.IsNullOrWhiteSpace(txtpass))
+                {
+                    MessageBox.Show("Por favor, ingrese usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (txtuser == admi.Usuario && txtpass == admi.Contrasena)
+                {
+                    userFound = true;
+
+                    frmMenu menu = new frmMenu(admi.Dni,absolutePath);
+                    menu.Show();
+                    this.Hide();
+                }
+            }
+            if (!userFound)
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            if (textContrasena.UseSystemPasswordChar)
+            {
+                textContrasena.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textContrasena.UseSystemPasswordChar = true;
+            }
+        }
+    }
+}

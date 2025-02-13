@@ -1,0 +1,62 @@
+[
+  {
+    "puertas": 4,
+    "cantidadDePasajeros": 5,
+    "matricula": "Ghi789",
+    "modelo": "Toyota corolla",
+    "ano": 2024,
+    "kilometraje": 5,
+    "motor": "1.8l",
+    "precio": 18000
+  },
+  {
+    "puertas": 4,
+    "cantidadDePasajeros": 5,
+    "matricula": "Def456",
+    "modelo": "Honda civic",
+    "ano": 2024,
+    "kilometraje": 5,
+    "motor": "8.0l",
+    "precio": 200
+  },
+  {
+    "puertas": 5,
+    "cantidadDePasajeros": 5,
+    "matricula": "Drg852",
+    "modelo": "Ford fiesta",
+    "ano": 2000,
+    "kilometraje": 10000,
+    "motor": "2.1",
+    "precio": 10000
+  },
+  {
+    "puertas": 2,
+    "cantidadDePasajeros": 2,
+    "matricula": "Afd458",
+    "modelo": "Tesla",
+    "ano": 2000,
+    "kilometraje": 20,
+    "motor": "Electrico",
+    "precio": 10000
+  },
+  {
+    "puertas": 5,
+    "cantidadDePasajeros": 5,
+    "matricula": "Asf831",
+    "modelo": "Tesla",
+    "ano": 2020,
+    "kilometraje": 65,
+    "motor": "F",
+    "precio": 4500
+  },
+  {
+    "puertas": 5,
+    "cantidadDePasajeros": 5,
+    "matricula": "Asd456",
+    "modelo": "Tesla",
+    "ano": 2000,
+    "kilometraje": 0,
+    "motor": "El\u00E9ctrico ",
+    "precio": 1000
+  }
+]
