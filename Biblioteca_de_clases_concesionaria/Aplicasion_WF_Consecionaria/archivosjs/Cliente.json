@@ -5,5 +5,33 @@
     "Dni": 12121212,
     "Usuario": "Cliente",
     "Contrasena": "cliente"
+  },
+  {
+    "Nombre": "Ana",
+    "Apellido": "Gomez",
+    "Dni": 22334455,
+    "Usuario": "AnaG",
+    "Contrasena": "ana123"
+  },
+  {
+    "Nombre": "Carlos",
+    "Apellido": "Perez",
+    "Dni": 33445566,
+    "Usuario": "CarlosP",
+    "Contrasena": "carlosp"
+  },
+  {
+    "Nombre": "Lucia",
+    "Apellido": "Martinez",
+    "Dni": 44556677,
+    "Usuario": "LuciaM",
+    "Contrasena": "lucia2024"
+  },
+  {
+    "Nombre": "Diego",
+    "Apellido": "Lopez",
+    "Dni": 55667788,
+    "Usuario": "DiegoL",
+    "Contrasena": "diegol"
   }
 ]

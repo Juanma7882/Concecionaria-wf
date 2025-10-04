@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yy9lWov2iWc=",
+  "dgSpecHash": "xbOQKL+huac=",
   "success": true,
-  "projectFilePath": "C:\\Users\\juan\\Desktop\\1parcial\\Biblioteca_de_clases_concesionaria\\TestProject\\TestProject.csproj",
+  "projectFilePath": "C:\\Users\\juan\\Desktop\\Concecionaria-wf\\Biblioteca_de_clases_concesionaria\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juan\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\juan\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
@@ -24,5 +24,30 @@
     "C:\\Users\\juan\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\juan\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "El paquete \"System.Text.Json\" 8.0.3 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "projectPath": "C:\\Users\\juan\\Desktop\\Concecionaria-wf\\Biblioteca_de_clases_concesionaria\\TestProject\\TestProject.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\juan\\Desktop\\Concecionaria-wf\\Biblioteca_de_clases_concesionaria\\TestProject\\TestProject.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "El paquete \"System.Text.Json\" 8.0.3 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+      "projectPath": "C:\\Users\\juan\\Desktop\\Concecionaria-wf\\Biblioteca_de_clases_concesionaria\\TestProject\\TestProject.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\juan\\Desktop\\Concecionaria-wf\\Biblioteca_de_clases_concesionaria\\TestProject\\TestProject.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
